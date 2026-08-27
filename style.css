@@ -1,0 +1,223 @@
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  font-family: "League Spartan", sans-serif;
+  padding-bottom: 20px;
+}
+
+.Intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.Header h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 60px;
+  width: 450px;
+  justify-content: center;
+  display: flex;
+}
+.Header p {
+  color: hsl(303, 15%, 71%);
+  font-size: 18px;
+  width: 500px;
+}
+
+.card-review {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px;
+  font-weight: 700;
+}
+
+.Card-reviews,
+.card-report,
+.card-tech {
+  background-color: hsl(304, 35%, 92%);
+  font-size: 18px;
+  color: hsl(300, 43%, 22%);
+  width: 350px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  height: 10px;
+}
+
+.Card-reviews {
+  margin-left: 0;
+}
+.card-report {
+  margin-left: 40px;
+}
+.card-tech {
+  margin-left: 60px;
+}
+.Card-Profile {
+  background-color: hsl(300, 43%, 22%);
+  width: 280px;
+  height: 200px;
+  padding: 30px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.description {
+  font-size: 14px;
+  width: 250px;
+  color: hsl(0, 0%, 100%);
+}
+
+.About {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.About img {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.cards {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 30px;
+}
+
+.Card-Profile h3 {
+  color: white;
+}
+
+.Card-Profile .description {
+  color: white;
+}
+
+.info span {
+  color: hsl(333, 80%, 67%);
+}
+
+.Card-Profile:nth-child(1) {
+  margin-top: 20px;
+}
+
+.Card-Profile:nth-child(2) {
+  margin-top: 40px;
+}
+
+.Card-Profile:nth-child(3) {
+  margin-top: 80px;
+}
+
+/* @media (max-width: 750px) {
+  .Intro {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .card-review {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Header h1 {
+    font-size: small;
+  }
+} */
+
+@media (max-width: 700px) {
+  body {
+    padding: 30px 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .Header {
+    text-align: center;
+  }
+
+  .Header h1 {
+    font-size: 38px;
+    width: 100%;
+    display: block;
+  }
+
+  .Header p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .card-review {
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .Card-reviews,
+  .card-report,
+  .card-tech {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .Card-Profile {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .Card-Profile:nth-child(1),
+  .Card-Profile:nth-child(2),
+  .Card-Profile:nth-child(3) {
+    margin-top: 0;
+  }
+}
